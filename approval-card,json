@@ -1,0 +1,36 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Image",
+            "url": "https://github.com/derhallim/PowerPlatformAppCamp/blob/main/SessionCelebrate.jpg?raw=true"
+        },
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Reward Request Approved",
+            "color": "Accent"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Whoa! An award has been granted to one of our team members:",
+            "wrap": true
+        },
+        {
+            "type": "FactSet",
+            "facts": [
+                {
+                    "title": "Employee Name",
+                    "value": "${EMPLOYEE_NAME}"
+                },
+                {
+                    "title": "Amount",
+                    "value": "${AMOUNT}"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4"
+}
